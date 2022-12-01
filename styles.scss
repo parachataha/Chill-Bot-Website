@@ -11,6 +11,17 @@ a.text-link {
     }
 }
 
+a{
+    color: white;
+    text-decoration: underline;
+    -webkit-text-decoration-color: #CA6262;
+            text-decoration-color: #CA6262;
+
+    &:hover, &:active {
+        color: #CA6262;
+    }
+}
+
 div.modal {
     position: fixed;
     text-align: center;
@@ -65,6 +76,7 @@ html { margin: 0; padding: 0; }
 body{ 
     margin: 0; padding: 0; 
     font-family: 'Poppins', sans-serif;
+    background-color: #CA6262;
     color: white;
     background-image: url('/assets/BG.png');
     padding:0vw 0vw 0vw 0vw;
@@ -86,8 +98,6 @@ header {
         display: flex;
         position: fixed;
         background-repeat: no-repeat;
-
-
 
         ul {
             display: flex;
@@ -314,6 +324,22 @@ footer {
         margin: 0; padding: 0;
         font-size: 2em;
     }
+    p { margin: 0; padding: 0; }
+
+        
+    ul.grid{
+        margin: .5vw; 
+        padding: 0;
+        display: flex;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        
+        li { 
+            list-style: none;
+            margin: 0px 1vw 0px 1vw;
+        }
+    }
 
 }
 
@@ -458,8 +484,8 @@ footer {
 
     footer {
         margin-top: 2vh;
-        h2{ font-size: 5em;}
-        p { font-size: 2.2em; }
+        h2{ font-size: 5em; }
+        p { font-size: 1.2em; }
     }
 
 }  

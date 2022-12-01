@@ -9,6 +9,16 @@ a.text-link:hover, a.text-link:active {
   text-decoration-color: #CA6262;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #CA6262;
+  text-decoration-color: #CA6262;
+}
+a:hover, a:active {
+  color: #CA6262;
+}
+
 div.modal {
   position: fixed;
   text-align: center;
@@ -61,6 +71,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: #CA6262;
   color: white;
   background-image: url("/assets/BG.png");
   padding: 0vw 0vw 0vw 0vw;
@@ -301,6 +312,22 @@ footer h2 {
   padding: 0;
   font-size: 2em;
 }
+footer p {
+  margin: 0;
+  padding: 0;
+}
+footer ul.grid {
+  margin: 0.5vw;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+footer ul.grid li {
+  list-style: none;
+  margin: 0px 1vw 0px 1vw;
+}
 
 @media screen and (max-width: 688px) {
   p {
@@ -460,6 +487,6 @@ footer h2 {
     font-size: 5em;
   }
   footer p {
-    font-size: 2.2em;
+    font-size: 1.2em;
   }
 }/*# sourceMappingURL=styles.css.map */
