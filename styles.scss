@@ -16,7 +16,6 @@ div.modal {
     text-align: center;
     width: 40%;
     bottom: 0px;
-    right: 0px;
     background-color: rgb(0,0,0,0.75);
     border-radius: 15px;
     margin: 1vw;
@@ -27,7 +26,8 @@ div.modal {
         margin: 0;
         padding: .5vw .5vw .5vw .5vw;
         border-radius: 15px 15px 0 0;
-        font-size: 1.5vw;
+        font-size: .7em;
+
 
         span.close {
             float: right;
@@ -41,11 +41,15 @@ div.modal {
     }
 
     p{
-        font-size: 1vw;
+        font-size: .6em;
     }
 }
 
 html { margin: 0; padding: 0; }
+
+.mobile-show {
+    display: none;
+}
 
 body{ 
     margin: 0; padding: 0; 
@@ -105,11 +109,12 @@ header {
 
         h1 {
             margin: 0;
-            font-size: 4vw;
+            font-size: 3em;
         }
         h2 {
             margin: 0;
-            font-size: 2vw;
+            font-size: 1em;
+            font-weight: 300;
         }
     }
 }
@@ -119,18 +124,20 @@ section#features {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 1vw 0vw 1vw 0vw;
-    padding-top: 1.6vw;;
+    padding: 1.6vw 0vw 1vw 01vw;
+
+    
     h2{
         text-align: center;
-        font-size: 3vw;
+        font-size: 1.5em;
     }
     h3{
-        font-size: 3vw;
+        font-size: 1em;
         margin: 0; padding: 0;
         margin-top: 4vw;
     }
     p{
-        font-size: 1.4vw;
+        font-size: .7em;
     }
     .lead{
         font-weight: 700;
@@ -180,6 +187,7 @@ section#features {
 
             p{
                 margin: 0; padding: 0;
+                font-size: .7em;
             }
         }
     }
@@ -193,7 +201,7 @@ section#about {
     padding: 2vw 0vw 20vw 0vw;
 
     h2{
-        font-size: 5vw;
+        font-size: 2em;
         text-align: center;
         margin: 2vw 0vw 0vw 0vw;
     }
@@ -205,13 +213,13 @@ section#about {
         display: flex;
         flex-direction: column;
         p {
-            font-size: 1.5vw;
+            font-size: .7em;
         }
         a.join {
             color: white;
             text-decoration: none;
             padding: 1vw;
-            font-size: 1vw;
+            font-size: .7em;
             border: 1px solid white;
             border-radius: 15px;
 
@@ -221,12 +229,16 @@ section#about {
             }
         }
         h3{
-            font-size: 3vw;
+            font-size: 1.2em;
             margin: 0; padding: 0;
         }
         h4{
             margin: 0; padding: 0;
-            font-size: 2vw;
+            font-size: 1em;
+        }
+        h5{
+            margin: 0; padding: 0;
+            font-size: .5em;
         }
 
         div.grid {
@@ -263,13 +275,14 @@ section#invite {
     background-color: rgb(0,0,0,.5);
     padding: 2vw 0vw 6vw 0vw;
     h2 {
-        font-size: 4vw;
+        font-size: 2em;
+        margin: 1vw; padding: 0;
     }
     a {
         color: white;
         text-decoration: none;
         padding: 1vw;
-        font-size: 1.1vw;
+        font-size: .8em;
         border: 1px solid white;
         border-radius: 15px;
         margin: .4vw;
@@ -288,7 +301,154 @@ footer {
 
     h2 {
         margin: 0; padding: 0;
-        font-size: 4vw;
+        font-size: 2em;
     }
 
 }
+
+@media screen and (max-width: 688px){
+
+    p { font-size: .7em }
+    h1{ font-size: 6em }
+    h2{ font-size: 5.5em; }
+    h3{ font-size: 4.5em; }
+    h4{ font-size: 3.5em; }
+    h5{ font-size: 3em; }
+
+    html { margin: 0; padding: 0; }
+    body {
+
+        .mobile-hide{
+            display: none;
+        }
+        .mobile-show {
+            display: block;
+        }
+
+        padding: 0; margin: 0;
+        overflow-x: hidden;
+        background-image: url('/assets/BG\ mobile.png');
+        width: 100%;
+
+        header{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            vertical-align:middle;
+
+            div.main {
+                h1{
+                    font-size: 5em;
+                    padding-top: 30vh;
+                }
+                h2{ font-size: 2em; }
+            }
+
+            nav {
+                ul{
+                    padding: 2vw;
+                    a{ 
+                        font-size: 4vw;
+                        margin: 1vw;
+                    }
+                }
+            }
+        }
+
+        div.modal {
+            display: none;
+        }
+
+        section#features {
+            height: 95vh;
+            padding: 1vw;
+            background-color: rgb(0,0,0,.5);
+            background-image: none;
+
+            h2{ font-size: 3em; }
+            h3{
+                font-size: 2em;
+                margin: 1vw;
+            }
+            p { font-size: 1.5em }
+
+            .row-1 {
+                display: block;
+                padding: 1vw;
+
+                div.a, div.b{
+                    background-color: white;
+                    background-image: none;
+                    margin: 3vw;
+                    border-radius: 25px;
+                    padding: 3vw;
+                    display: block;
+
+                    h3 {display: none }
+                }
+            }
+            .row-2 {
+                display: none;
+                // margin-top: 20vh;
+                
+                background-color: white;
+                background-image: none;
+                margin: 1vw 3vw 1vw 3vw;
+                padding: 1vw;
+                border-radius: 25px;
+
+                div.grid{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    section#about {
+        background-image: none;
+        background-color: rgb(0,0,0,.5);
+        margin-top: 2vh;
+        
+        h2{ font-size: 4em; margin-top: 1vh; }
+        h3{
+            font-size: 2em;
+            margin: 1vw;
+        }
+        p { font-size: 1.5em; }
+
+        div.text{
+            p { font-size: 1.5em; }
+            a.join { font-size: 1.2em; padding: 1.5vh}
+        }
+        div.team {
+            h3{ font-size: 3em; }
+
+            div.grid{
+                display: block;
+                div {
+                    h4{ font-size: 2.2em; margin: 0; padding: 0; }
+                    h5 {font-size: .7em; margin: 0; padding: 0; }
+                    p{ font-size: 1em; }
+                }
+            }
+        }
+    }
+
+    section#invite {
+        h2{ font-size: 4em;}
+        div.flex{
+            a{ 
+                font-size: 1em; 
+                padding: 1.5vh;
+                margin: .5vh;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2vh;
+        h2{ font-size: 4em;}
+        p { font-size: 2em; }
+    }
+
+}  
