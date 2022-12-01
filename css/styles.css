@@ -232,6 +232,15 @@ section#about div.text div.grid div {
 section#about div.text div.grid div p {
   font-size: 1.2vw;
 }
+section#about div.text div.grid div h4 {
+  margin: 0;
+  padding: 0;
+}
+section#about div.text div.grid div h5 {
+  margin: 0;
+  padding: 0;
+  color: rgb(178, 178, 178);
+}
 section#about div.text div.grid div img.pfp {
   margin: 1vw;
   height: 25vw;
