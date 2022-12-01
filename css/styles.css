@@ -22,7 +22,7 @@ div.modal {
 div.modal div.modal-header {
   background-color: black;
   margin: 0;
-  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  padding: 0.8vw 0.5vw 0.8vw 0.5vw;
   border-radius: 15px 15px 0 0;
   font-size: 0.7em;
 }
@@ -119,16 +119,16 @@ section#features {
 }
 section#features h2 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.4em;
 }
 section#features h3 {
-  font-size: 1em;
+  font-size: 2em;
   margin: 0;
   padding: 0;
   margin-top: 4vw;
 }
 section#features p {
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 section#features .lead {
   font-weight: 700;
@@ -176,7 +176,7 @@ section#features div.row-2 div.grid {
 section#features div.row-2 div.grid p {
   margin: 0;
   padding: 0;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 section#about {
