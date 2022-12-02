@@ -503,7 +503,11 @@ body#terms {
         }
 
         div.modal, div.modal-2 {
-            display: none;
+            width: 100%;
+            margin: 1vw;
+        }
+        div.modal-2 {
+            bottom: 16vh;
         }
 
         section#features {

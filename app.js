@@ -1,6 +1,14 @@
-const closeOne = document.querySelector('span.close');
+const closeOne = document.querySelector('div.modal span.close');
 const modalOne = document.querySelector('div.modal')
 
-close.addEventListener('click', () => {
-    modal.style.display = 'none'
+const closeTwo = document.querySelector('div.modal-2 span.close');
+const modalTwo = document.querySelector('div.modal-2')
+
+closeOne.addEventListener('click', () => {
+    modalOne.style.display = 'none';
+    modalTwo.style.bottom = '0px';
+})
+
+closeTwo.addEventListener('click', () => {
+    modalTwo.style.display = 'none';
 })

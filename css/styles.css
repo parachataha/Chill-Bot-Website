@@ -490,7 +490,11 @@ body#terms section#terms-main {
     margin: 1vw;
   }
   body div.modal, body div.modal-2 {
-    display: none;
+    width: 100%;
+    margin: 1vw;
+  }
+  body div.modal-2 {
+    bottom: 16vh;
   }
   body section#features {
     height: 95vh;
