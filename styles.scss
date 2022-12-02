@@ -343,7 +343,7 @@ footer {
 
 }
 
-@media screen and (max-width: 688px){
+@media screen and (max-width: 988px){
 
     p { font-size: .7em }
     h1{ font-size: 6em }
@@ -371,14 +371,14 @@ footer {
             height: 100vh;
             display: flex;
             flex-direction: column;
-            vertical-align:middle;
+            vertical-align:middle;;
 
             div.main {
                 h1{
                     font-size: 5em;
                     padding-top: 30vh;
                 }
-                h2{ font-size: 2em; }
+                h2{ font-size: 7vw }
             }
 
             nav {
@@ -402,12 +402,12 @@ footer {
             background-color: rgb(0,0,0,.5);
             background-image: none;
 
-            h2{ font-size: 3em; }
+            h2{ font-size: 7.5vw; }
             h3{
-                font-size: 2em;
+                font-size: 4.5vw;
                 margin: 1vw;
             }
-            p { font-size: 1.5em }
+            p { font-size: 5.5vw }
 
             .row-1 {
                 display: block;
@@ -451,11 +451,11 @@ footer {
             font-size: 2em;
             margin: 1vw;
         }
-        p { font-size: 1.5em; }
+        p { font-size: 2.5em; }
 
         div.text{
-            p { font-size: 1.5em; }
-            a.join { font-size: 1.2em; padding: 1.5vh}
+            p { font-size: 2.5em; }
+            a.join { font-size: 2.2em; padding: 1.5vh}
         }
         div.team {
             h3{ font-size: 3em; }
@@ -464,8 +464,8 @@ footer {
                 display: block;
                 div {
                     h4{ font-size: 2.2em; margin: 0; padding: 0; }
-                    h5 {font-size: .7em; margin: 0; padding: 0; }
-                    p{ font-size: 1em; }
+                    h5 {font-size: 1.5em; margin: 0; padding: 0; }
+                    p{ font-size: 2em; }
                 }
             }
         }
@@ -475,9 +475,10 @@ footer {
         h2{ font-size: 4em;}
         div.flex{
             a{ 
-                font-size: 1em; 
+                display: block;
+                font-size: 1.5em; 
                 padding: 1.5vh;
-                margin: .5vh;
+                margin: 1.3vw;
             }
         }
     }

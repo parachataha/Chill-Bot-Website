@@ -329,7 +329,7 @@ footer ul.grid li {
   margin: 0px 1vw 0px 1vw;
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 988px) {
   p {
     font-size: 0.7em;
   }
@@ -376,7 +376,7 @@ footer ul.grid li {
     padding-top: 30vh;
   }
   body header div.main h2 {
-    font-size: 2em;
+    font-size: 7vw;
   }
   body header nav ul {
     padding: 2vw;
@@ -395,14 +395,14 @@ footer ul.grid li {
     background-image: none;
   }
   body section#features h2 {
-    font-size: 3em;
+    font-size: 7.5vw;
   }
   body section#features h3 {
-    font-size: 2em;
+    font-size: 4.5vw;
     margin: 1vw;
   }
   body section#features p {
-    font-size: 1.5em;
+    font-size: 5.5vw;
   }
   body section#features .row-1 {
     display: block;
@@ -444,13 +444,13 @@ footer ul.grid li {
     margin: 1vw;
   }
   section#about p {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   section#about div.text p {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   section#about div.text a.join {
-    font-size: 1.2em;
+    font-size: 2.2em;
     padding: 1.5vh;
   }
   section#about div.team h3 {
@@ -465,20 +465,21 @@ footer ul.grid li {
     padding: 0;
   }
   section#about div.team div.grid div h5 {
-    font-size: 0.7em;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
   }
   section#about div.team div.grid div p {
-    font-size: 1em;
+    font-size: 2em;
   }
   section#invite h2 {
     font-size: 4em;
   }
   section#invite div.flex a {
-    font-size: 1em;
+    display: block;
+    font-size: 1.5em;
     padding: 1.5vh;
-    margin: 0.5vh;
+    margin: 1.3vw;
   }
   footer {
     margin-top: 2vh;
