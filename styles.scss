@@ -22,18 +22,70 @@ a{
     }
 }
 
+div.modals {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
 div.modal {
     position: fixed;
     text-align: center;
-    width: 40%;
+    width: 30%;
     bottom: 0px;
+    right: 0px;
     background-color: rgb(0,0,0,0.75);
     border-radius: 15px;
     margin: 1vw;
     transition: 1s; 
 
     div.modal-header {
-        background-color: black;
+        background-color: rgb(0, 118, 28);
+        margin: 0;
+        padding: .8vw .5vw .8vw .5vw;
+        border-radius: 15px 15px 0 0;
+        font-size: 1.1em;
+
+
+        span.close {
+            float: right;
+            margin: 0px 5px 0px 5px;
+            cursor: pointer;
+        }
+        span.alert { 
+            float: left;
+            margin: 0px 5px 0px 5px;
+        }
+    }
+
+    p{
+        font-size: 1em;
+
+        a{
+            color: white;
+            text-decoration: underline;
+            -webkit-text-decoration-color: #CA6262;
+                    text-decoration-color: #CA6262;
+
+            &:hover, &:active {
+                color: #CA6262;
+            }
+        }
+    }
+}
+
+div.modal-2 {
+    position: fixed;
+    text-align: center;
+    width: 30%;
+    bottom: 8vw;
+    right: 0px;
+    background-color: rgb(0,0,0,0.75);
+    border-radius: 15px;
+    margin: 1vw;
+    transition: 1s; 
+
+    div.modal-header {
+        background-color: rgb(142, 0, 0);
         margin: 0;
         padding: .8vw .5vw .8vw .5vw;
         border-radius: 15px 15px 0 0;
@@ -86,7 +138,7 @@ body{
     overflow-x: hidden;
 }
 
-header {
+header#home {
     margin: 0; padding: 0;
     padding:0vw 0vw 30vw 0vw;
     width: 100%;
@@ -343,6 +395,64 @@ footer {
 
 }
 
+body#terms {
+    padding: 0; margin: 0;
+    header#terms {
+        margin: 0px; padding: 0px;
+        padding-bottom: 10px;
+
+        nav {
+            margin: 0; padding: 0px;
+            background-image: linear-gradient((180deg, rgb(0,0,0,.5), rgb(0,0,0,0)));
+            width:100vw;
+            display: flex;
+            position: fixed;
+            background-repeat: no-repeat;
+    
+            ul {
+                display: flex;
+                margin: 0; padding: 0;
+                width: 100%;
+                justify-content: center;
+    
+                li{ 
+                    list-style: none;
+                    margin: 1vw;
+    
+                    
+                    a{ 
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.3em;
+                        text-align: center;
+    
+                        &:hover, &:active {
+                            color: #003dd6;
+                        }
+                    }
+                }
+            }
+        }
+        div.main {
+            margin: 0; padding: 0;
+            h1{
+                margin: 6vw 3vw 6vw 3vw; padding: 0;
+                text-align: center;
+                font-size: 5vw;
+            }
+            h2 {
+                margin: 0; padding: 0;
+            }
+        }
+    }
+
+    section#terms-main {
+        background-color: rgb(0,0,0,.5);
+        text-align: center;
+        padding: 1vw;
+    }
+}
+
 @media screen and (max-width: 988px){
 
     p { font-size: .7em }
@@ -367,7 +477,7 @@ footer {
         background-image: url('/assets/BG\ mobile.png');
         width: 100%;
 
-        header{
+        header#home{
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -392,7 +502,7 @@ footer {
             }
         }
 
-        div.modal {
+        div.modal, div.modal-2 {
             display: none;
         }
 
