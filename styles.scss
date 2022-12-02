@@ -178,16 +178,25 @@ header#home {
 
     text-align: center;
     div.main {
+        margin-top: 0vw;
         padding: 15vw 0px 0px 0px;
+        div.text {
+            padding: .6vw 0vw 0vw 0vw;
+            background-image: url('/assets/title\ bg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            height: 35vh;
+        }
 
         h1 {
             margin: 0;
-            font-size: 4.5em;
+            font-size: 5.0em;
         }
         h2 {
             margin: 0;
-            font-size: 2em;
-            font-weight: 300;
+            font-size: 2.5em;
+            font-weight: 400;
         }
     }
 }
@@ -400,6 +409,15 @@ body#terms {
     header#terms {
         margin: 0px; padding: 0px;
         padding-bottom: 10px;
+
+        // div.text {
+        //     padding: .6vw 0vw 0vw 0vw;
+        //     background-image: url('/assets/title\ bg.png');
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     background-position-x: 50%;
+        //     height: 25vh;
+        // }
 
         nav {
             margin: 0; padding: 0px;

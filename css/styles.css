@@ -164,16 +164,25 @@ header#home nav ul li a:hover, header#home nav ul li a:active {
   color: #003dd6;
 }
 header#home div.main {
+  margin-top: 0vw;
   padding: 15vw 0px 0px 0px;
+}
+header#home div.main div.text {
+  padding: 0.6vw 0vw 0vw 0vw;
+  background-image: url("/assets/title bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  height: 35vh;
 }
 header#home div.main h1 {
   margin: 0;
-  font-size: 4.5em;
+  font-size: 5em;
 }
 header#home div.main h2 {
   margin: 0;
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 section#features {
